@@ -132,8 +132,8 @@ display: none;
   left: 20px;
 }
 
-#hero{
-  background-image: url("https://c0.wallpaperflare.com/preview/265/849/245/toys.jpg");
+#hero {
+  background-image: url("https://images.unsplash.com/photo-1619768470847-f7db55f5d72e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -144,7 +144,21 @@ display: none;
   align-items: flex-start;
   justify-content: center;
   line-height: 1;
- 
+  position: relative; /* Add position relative to contain absolutely positioned gradient */
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%; /* Set the width to cover half of the image */
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1)); /* White gradient from transparent to white */
+}
+.text-container {
+  position: relative; /* Ensure text elements are positioned relative to this container */
+  z-index: 1; /* Ensure text appears above the gradient */
 }
 
 #hero h1{
@@ -302,19 +316,31 @@ flex-wrap: wrap
   
 }
 
-#banner{
+#banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(https://i.postimg.cc/SsC7D5WD/b2.jpg);
+  background-image: url(https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   width: 100%;
   height: 40vh;
   background-position: center;
   background-size: cover;
-  
+  position: relative; /* Add position relative to contain absolutely positioned gradient */
 }
+
+#banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(5, 5, 5, 0.8) 0%, rgba(255,255,255,0) 80%); /* White gradient from 80% opacity to transparent */
+  backdrop-filter: blur(2px);
+}
+
 
 #banner h4{
   color: #fff;
