@@ -419,7 +419,7 @@ button.normal{
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image: url(https://i.postimg.cc/vZ6YLxDG/b17.jpg);
+  background-image: url('https://as1.ftcdn.net/v2/jpg/04/76/79/70/1000_F_476797090_GD9J6JoeR956o2yXxMBEqQEw0xnlgAx5.jpg');
   min-width: 580px;
   height: 40vh;
   background-position: center;
@@ -428,7 +428,7 @@ button.normal{
 }
 
 #sm-banner .banner-box2{
-  background-image: url(https://i.postimg.cc/gJ7FHxHv/b10.jpg)
+  background-image: url(https://img.freepik.com/premium-photo/baby-kids-toys-background-wooden-train-educational-stacking-recognition-toy-yellow-background_1048944-23134099.jpg?w=1060)
 }
 
 #sm-banner{
@@ -489,7 +489,7 @@ button.white{
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image: url(https://i.postimg.cc/BQQHKtwh/b7.jpg);
+  background-image: url(https://img.freepik.com/free-vector/horizontal-sale-banner-template-international-children-s-day-celebration_23-2150364092.jpg?t=st=1715960429~exp=1715961029~hmac=205c236bc9f075636b3bfcdfc637ec90ff8e688235c8e7e09d3d987c90c03490);
   min-width: 30%;
   height: 30vh;
   background-position: center;
@@ -499,7 +499,7 @@ button.white{
 }
 
 #banner3 h2{
-  color: #fff;
+  color: #090909;
   font-weight: 900;
   font-size: 22px;
 }
@@ -511,11 +511,11 @@ button.white{
 }
 
 #banner3 .banner-img2{
-  background-image: url(https://i.postimg.cc/SxP6qqdg/b4.jpg)
+  background-image: url(https://img.freepik.com/free-vector/hand-drawn-kids-toys-facebook-cover_23-2149651187.jpg)
 }
 
 #banner3 .banner-img3{
-   background-image: url(https://i.postimg.cc/m2th49nG/b18.jpg)
+   background-image: url(https://img.freepik.com/free-vector/flat-kids-social-media-post-template_23-2149658126.jpg)
 }
 
 #newsletter  {
