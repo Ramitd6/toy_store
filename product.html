@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion T-shirt</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img id="product-image" src="" alt="Men's Fashion T-shirt">
+        </div>
+        <div class="product-details">
+            <h1 id="product-title">Men's Fashion T-shirt</h1>
+            <p class="price" id="product-price"></p>
+            <form>
+                <label for="size">Select quantity:</label>
+                <select id="size" name="size">
+                    <option value="s">1</option>
+                    <option value="m">2</option>
+                    <option value="l">3</option>
+                    <option value="xl">4</option>
+                </select>
+                <br><br>
+                <button type="button" onclick="addToCart()">Add to Cart</button>
+            </form>
+            <h2>Product Details</h2>
+            <p id="product-description">The HKC HOUSE Baby Play Gym Kick for Boy and Girl Activity Toys is designed with the utmost care and creativity. Crafted from durable and child-safe materials, this play gym provides endless entertainment and developmental benefits. Featuring vibrant colors and interactive elements, it stimulates sensory exploration and motor skills development in infants.</p>
+        </div>
+    </div>
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            const results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Get image, price, and description from URL parameters
+        const name = getUrlParameter('name');
+        const imageSrc = getUrlParameter('image');
+        const price = getUrlParameter('price');
+        const description = getUrlParameter('description');
+        
+
+        // Update the page content
+        document.getElementById('product-image').src = imageSrc;
+        document.getElementById('product-price').innerText = price;
+        document.getElementById('product-description').innerText = description;
+        document.getElementById('product-title').innerText = name;
+
+        // Function to handle Add to Cart button click
+        function addToCart() {
+            alert('The item has been added to your cart.');
+        }
+    </script>
+</body>
+</html>

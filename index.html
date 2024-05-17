@@ -23,15 +23,22 @@
     </head>
 
     <body>
+
+      
+
+  <!-- --------------------- Header ----------------------------------------- -->
+
+
  <section id="header">
             <a href="#"><img style="display: flex; height: 130%;" src="assets/images/logo.png"></a>
             <div>
       <ul id="navbar">
- <li><a href="index.html" class="active">Home</a></li>
- <li><a href="shop.html">Shop</a></li>
- <li><a href="blog.html">Blog</a></li>
- <li><a href="about.html">About</a></li>
- <li><a href="contact.html">Contact</a></li>
+ <li><a href="#hero" class="active">Home</a></li>
+<li><a href="#toys">Toys</a></li>
+<li><a href="#bags">Bags</a></li>
+<li><a href="#bottles">Bottles</a></li>
+ <li><a href="#gifts">Gifts</a></li>
+ <li><a href="#contact">Contact</a></li>
  <li><a href="cart.html" id="lg-bag"><i class="fal fa-shopping-bag"></i></a>
    <span class="quantity">0</span>
  </li>
@@ -49,10 +56,10 @@
 <section id="hero">
   <div class="text-container">
     <h4></h4>
-    <h2>Super value deals</h2>
+    <h2 style="color: white;">Super value deals</h2>
     <h1>On all Toys</h1>
-    <p>Save more with coupons and up to 70% off!</p>
-    <button>Shop Now</button>
+    <p style="color: white;">Save more with coupons and up to 70% off!</p>
+    <button onclick="">Shop Now</button>
   </div>
   
 </section>
@@ -89,31 +96,89 @@
   </div>
   
 </section>
+<section id="sm-banner" class="section-p1"> 
+  <div class="banner-box">
+    <h4>crazy deals</h4>
+    <h2>buy 1 get 1 free</h2>
+    <span>The best classic dress is on sales at cara</span>
+    <button class="btn white">Learn More</button> 
+  
+  </div>
+  
+  <div class="banner-box banner-box2">
+    <h4>spring/summer</h4>
+    <h2>upcoming season</h2>
+    <span>The best classic dress is on sales at cara</span>
+    <button class="btn white">Collection</button> 
+  
+  </div>
+  
+</section>
 
+<section id="banner3" class="section-p1">
+  <div class="banner-box">
+    
+    <h2>SEASONAL SALES</h2>
+    <h3>Winter Collection -50% OFF</h3>
+ 
+  </div>
+  
+  <div class="banner-box banner-img2">
+    
+    <h2>SEASONAL SALES</h2>
+    <h3>Winter Collection -50% OFF</h3>
+ 
+  </div>
+  
+  <div class="banner-box banner-img3">
+    
+    <h2>SEASONAL SALES</h2>
+    <h3>Winter Collection -50% OFF</h3>
+ 
+  </div>
+  
+</section>
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------  -->
+<!-- Feature Product Section -->
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<!-- onclick="window.location.href='product.html'" -->
 <section id="product1" class="section-p1">
   <h2>Featured Products</h2>
   <p>Discover Fun and Imaginative Toys for Every Adventure</p>
   <div class="pro-container">
     
-    <div class="pro" onclick="window.location.href='https://codepen.io/Motun/full/OJBwbrQ'">
-      <img src="assets/images/img1.jpeg" alt="">
-      <div class="des">
-        <!-- <span>adidas</span> -->
-        <h5>HKC HOUSE Baby Play Gym Kick and Play Piano Mat Newborn Toy for Boy and Girl Activity Toys  (Multicolor)</h5>
+    <div class="pro" 
+     data-image-src="assets/images/img1.jpeg"
+     data-price="₹609"
+     data-name="HKC HOUSE Baby Play Gym Kick for Boy and Girl Activity Toys"
+     data-description="HKC HOUSE Baby Play Gym Kick for Boy and Girl Activity Toys"
+     onclick="redirectToProductPage(this)">
+    <img src="assets/images/img1.jpeg" alt="">
+    <div class="des">
+        <h5>HKC HOUSE Baby Play Gym Kick for Boy and Girl Activity Toys</h5>
         <div class="star">
-          <i class="fas fa-star"></i>
-           <i class="fas fa-star"></i>
-           <i class="fas fa-star"></i>
-           <i class="fas fa-star"></i>
-           <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
         </div>
         <h4>₹609</h4>
-      </div>
-      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
     </div>
+    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+</div>
+
     
     
-    <div class="pro">
+    <div class="pro"
+    data-image-src="assets\images\products\IMG-20240316-WA0049 (1).jpg"
+     data-price="₹299"
+     data-name="School Bag for kids"
+     data-description="Description"
+     onclick="redirectToProductPage(this)">
+    >
       <img src="assets\images\products\IMG-20240316-WA0049 (1).jpg" alt="">
       <div class="des">
         <span>adidas</span>
@@ -253,12 +318,16 @@
   </div>
   </section>
 
-<section id="product1" class="section-p1">
-  <h2>New Arrivals</h2>
-  <p>Summer Collection New Modern Design</p>
+<!-- --------------------------------------------------------------------------------------------------------------------  -->
+<!-- Toys Section -->
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+ <section id="toys"> <section id="product1" class="section-p1">
+  <h2>Toy Collections</h2>
+  <p>Get all types of toys here</p>
   <div class="pro-container">
     <div class="pro">
-      <img src="https://i.postimg.cc/hG1hqqK6/n1.jpg" alt="">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0020 (1).jpg" alt="">
       <div class="des">
         <span>adidas</span>
         <h5>Carton Astronault Tshirts</h5>
@@ -276,7 +345,7 @@
     
     
     <div class="pro">
-      <img src="https://i.postimg.cc/BZkSkvxt/n2.jpg" alt="">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0021 (1).jpg" alt="">
       <div class="des">
         <span>adidas</span>
         <h5>Carton Leave Tshirts</h5>
@@ -294,7 +363,7 @@
     
     
     <div class="pro">
-      <img src="https://i.postimg.cc/KYjcC3sk/n3.jpg" alt="">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0022 (1).jpg" alt="">
       <div class="des">
         <span>adidas</span>
         <h5>Rose Multicolor Tshirts</h5>
@@ -312,7 +381,7 @@
     
     
     <div class="pro">
-      <img src="https://i.postimg.cc/vHvQBtJx/n4.jpg" alt="">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0023 (1).jpg" alt="">
       <div class="des">
         <span>adidas</span>
         <h5>Pink Flower Tshirts</h5>
@@ -331,7 +400,7 @@
     
     
     <div class="pro">
-      <img src="https://i.postimg.cc/908J8S4q/n5.jpg" alt="">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0025 (1).jpg" alt="">
       <div class="des">
         <span>adidas</span>
         <h5>Purple Flowering Tshirts</h5>
@@ -350,7 +419,7 @@
     
     
     <div class="pro">
-      <img src="https://i.postimg.cc/X7r8NsGQ/n7.jpg" alt="">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0026 (1).jpg" alt="">
       <div class="des">
         <span>adidas</span>
         <h5>Short Knicker </h5>
@@ -369,7 +438,7 @@
     
     
     <div class="pro">
-      <img src="https://i.postimg.cc/JhrH0hYM/n8.jpg" alt="">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0029 (1).jpg" alt="">
       <div class="des">
         <span>adidas</span>
         <h5>2 in 1 Double Routed</h5>
@@ -388,7 +457,96 @@
     
     
     <div class="pro">
-      <img src="https://i.postimg.cc/2Sq4mytJ/f8.jpg" alt="">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0031 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0032 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>2 in 1 Double Routed</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0033 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0034 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>2 in 1 Double Routed</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    
+    
+    
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0035 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0036 (1).jpg" alt="">
       <div class="des">
         <span>adidas</span>
         <h5>Ash Short</h5>
@@ -404,51 +562,1417 @@
       <a href=""><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0038 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0039 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0041 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0042 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0044 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0045 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0046 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0047 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0048 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0049 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0050 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0166 (2).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0164 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0163 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+
+    <div class="pro">
+      <img src="assets\images\products\Toys\IMG-20240319-WA0161 (1).jpg" alt="">
+      <div class="des">
+        <span>adidas</span>
+        <h5>Ash Short</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+        </div>
+        <h4>$78</h4>
+      </div>
+      <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+
+
+    
   </div>
+</section></section>
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------  -->
+<!-- Bags Section -->
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+
+<section id="bags">
+  <section id="product1" class="section-p1">
+    <h2>Bag Collections</h2>
+    <p>School bags for kids</p>
+    <div class="pro-container">
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0049 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Carton Astronault Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0051 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Carton Leave Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0052 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Rose Multicolor Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0054 (2).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Pink Flower Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0055 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Purple Flowering Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0057 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Short Knicker </h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0058 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>2 in 1 Double Routed</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0060 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+  
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0062 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>2 in 1 Double Routed</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0087 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+  
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0091 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>2 in 1 Double Routed</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bags\IMG-20240316-WA0096 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+    </div>
+  </section>
 </section>
 
-<section id="sm-banner" class="section-p1"> 
-  <div class="banner-box">
-    <h4>crazy deals</h4>
-    <h2>buy 1 get 1 free</h2>
-    <span>The best classic dress is on sales at cara</span>
-    <button class="btn white">Learn More</button> 
+<!-- --------------------------------------------------------------------------------------------------------------------  -->
+<!-- Bottle Section -->
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+
+<section id="bottles">
+  <section id="product1" class="section-p1">
+    <h2>Bottle Collections</h2>
+    <p>School bottles for kids</p>
+    <div class="pro-container">
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0064 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Carton Astronault Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0065 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Carton Leave Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0066 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Rose Multicolor Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0069 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Pink Flower Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0070 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Purple Flowering Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0071 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Short Knicker </h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0072 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>2 in 1 Double Routed</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0073 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
   
-  </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0074 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>2 in 1 Double Routed</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0075 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
   
-  <div class="banner-box banner-box2">
-    <h4>spring/summer</h4>
-    <h2>upcoming season</h2>
-    <span>The best classic dress is on sales at cara</span>
-    <button class="btn white">Collection</button> 
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0076 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>2 in 1 Double Routed</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0077 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0078 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240319-WA0138 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240319-WA0090 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0097 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0095 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0090 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0089 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0085 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0083 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0080 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0080 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Bottles\IMG-20240316-WA0080 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
   
-  </div>
-  
+      
+    </div>
+  </section>
 </section>
 
-<section id="banner3" class="section-p1">
-  <div class="banner-box">
-    
-    <h2>SEASONAL SALES</h2>
-    <h3>Winter Collection -50% OFF</h3>
- 
-  </div>
+<!-- --------------------------------------------------------------------------------------------------------------------  -->
+<!-- Gifts Section -->
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+<section id="gifts"> 
+  <section id="product1" class="section-p1">
+    <h2>Gift Collections</h2>
+    <p>Get all types of gifts here</p>
+    <div class="pro-container">
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240316-WA0050 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Carton Astronault Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240316-WA0092 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Carton Leave Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240316-WA0093 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Rose Multicolor Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0085 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Pink Flower Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0086 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Purple Flowering Tshirts</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0088 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Short Knicker </h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0089 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>2 in 1 Double Routed</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0091 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
   
-  <div class="banner-box banner-img2">
-    
-    <h2>SEASONAL SALES</h2>
-    <h3>Winter Collection -50% OFF</h3>
- 
-  </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0092 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>2 in 1 Double Routed</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0093 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
   
-  <div class="banner-box banner-img3">
-    
-    <h2>SEASONAL SALES</h2>
-    <h3>Winter Collection -50% OFF</h3>
- 
-  </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0096 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>2 in 1 Double Routed</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0097 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
   
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0098 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0100 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0108 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0109 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0109 (1)(1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0110 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0116 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0117 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0123 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0125 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0126 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+  
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0146 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+  
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0145 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+  
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0144 (1)(1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+  
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0143 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+  
+      <div class="pro">
+        <img src="assets\images\products\Gifts\IMG-20240319-WA0141 (1).jpg" alt="">
+        <div class="des">
+          <span>adidas</span>
+          <h5>Ash Short</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href=""><i class="fal fa-shopping-cart cart"></i></a>
+      </div>
+  
+  
+      
+    </div>
+  </section>
 </section>
+
+
+
+
 
 <section id="newsletter" class="section-p1">
   <div class="newstext">
@@ -464,7 +1988,7 @@
   
 </section>
 
-<footer class="section-p1">
+<footer class="section-p1" id="Contact">
   
 <div class="col">
 <a href="#"><img class="logo" src="https://i.postimg.cc/x8ncvFjr/logo.png"></a>

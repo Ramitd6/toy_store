@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #088178;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.product-image {
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-details {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.product-details h1 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.product-details .price {
+    font-size: 24px;
+    color: #b12704;
+    margin-bottom: 20px;
+}
+
+.product-details form {
+    margin-bottom: 20px;
+}
+
+.product-details form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.product-details form select {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.product-details form button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #088178;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-details form button:hover {
+    background-color: #0056b3;
+}
+
+.product-details h2 {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #333;
+}
+
+.product-details p {
+    line-height: 1.6;
+    color: #666;
+}
